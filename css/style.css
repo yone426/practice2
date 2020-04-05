@@ -4,7 +4,7 @@
 
 html {
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 body {
@@ -90,6 +90,7 @@ section h2 {
   margin: 0 0 0 25px;	
   font-size: 2.5rem;
   color: #fff;
+  font-size: 30px;
 }
 
 .header nav ul {
@@ -208,6 +209,14 @@ text-align: center;
 .topics {
   padding: 120px;
   }
+
+.topics #why{
+  font-size: 25px;
+}
+.topics #road{
+  color: red;
+  font-size: 18px;
+}
   
 .topics .content-wrapper {
   display: -ms-flexbox;
@@ -330,7 +339,7 @@ text-align: center;
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  /* background-color: rgba(0,0,0,0.3); */
 }
 
 .institution .content {
@@ -341,12 +350,15 @@ text-align: center;
 }
 
 .institution h2 {
-  color: #fff;
+  color:white;
+ 
   text-align: left;
+  font-size: 50px;
 }
 
 .institution p {
   color: #fff;
+  font-size: 30px;
   text-align: left;
   margin-bottom: 70px;
 }
@@ -524,10 +536,17 @@ text-align: center;
 }
 
 
-.footer section {
-  padding-top: 120px;
-}
+.footer  {
+  width :100%;
+  background-color: black;
+ 
+  width: 100%;
 
+ 
+  z-index: 10;
+
+}
+/* 
 .footer .high {
  border-bottom: 1px solid #333;
  display:-ms-flexbox;
@@ -537,8 +556,7 @@ text-align: center;
  -webkit-justify-content: space-between;
  justify-content:space-between;
  align-items: flex-end;
-}
-
+} 
 .footer .high h1 {
   font-size: 1.5rem;
 }
@@ -548,13 +566,11 @@ text-align: center;
  display:-webkit-flex;
  display: flex;
  margin-bottom: 25px;
-}
-
+} 
 .footer .high li a {
  color: #333;
  padding: 0 25px;
-}
-
+} 
 .footer .high li a:hover {
  opacity: 0.6;
 }
@@ -566,12 +582,13 @@ text-align: center;
 
 .footer .low span {
  padding-left: 1em;
-}
+} */
 
-.footer section p {
- color: #333;
+.footer p {
+ color: #fff;
  text-align: center;
  font-size: 0.75rem;
+ font-size: 20px;
 }
 
 

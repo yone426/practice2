@@ -23,16 +23,17 @@
     <nav>
       <ul>
        <li><a href="#section1">TOP</a></li>
-       <li><a href="#section2">施設案内</a></li>
-       <li><a href="#">採用情報</a></li>
-       <li><a href="#">お問い合わせ</a></li>
+       <li><a href="#section2">経歴</a></li>
+       <li><a href="#section3">Ruby</a></li>
+       <li><a href="#section4">Rails</a></li>
+       <li><a href="#section5">もくもく会</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <article class="mainvisual">
+    <article class="mainvisual" id="section1">
       <img src="images/IMG_7687 3.JPG" alt="">
       <h2><p>
         転職活動中<br>
@@ -42,13 +43,57 @@
       </p></h2>
     </article>
 
-    <section class="text-center back_dark padding_top" id="section2">
+    <article class="topics back_dark" id="section2">
+      <section class="content-wrapper">
+        <div class="heading">
+          <h2>経歴</h2>
+        </div>
+        <div class="content">
+          <table>
+          <tbody>
+          <tr>
+          <th>2014.04.01</th>
+          <td>株式会社京都銀行 入行</td>
+          </tr>
+          <tr>
+          <th>2017.04.01</th>
+          <td>学校法人河合塾 入塾</td>
+          </tr>
+          <tr>
+            <th>2020.12.07</th>
+            <td>プログラミング学習開始</td>
+          </tr>
+          <tr>
+          <th>2020.03.15</th>
+          <td>学校法人河合塾 退塾</td>
+          </tr>
+          </tbody>
+          </table>
+          <!-- <p class="btn"><a href="#">more</a></p> -->
+        </div>
+      </section>
+      <div class="reason">
+        <p id="why">♪ どのようなエンジニアになりたいか</p>
+        <p id="road">お客様の生活や夢実現をを支えるエンジニアに！</p>
+        <ul>
+          <li>銀行員の時はお客様の生活や夢を、河合塾の時は、高校生の自己実現を支える事にやりがいを感じ、仕事に取り組んできました。今後も支えると言う軸はブレずに、</li><br>
+          <li>・お客様の声をヒアリングし、反映できる</li>
+          <li>・社内で自身に求められている事を常に考え、チームワークを意識する</li>
+          <li>・スキルアップのため、行動し続ける</li>
+
+        </ul>
+        <p>を大切に継続していきます。</p>
+        
+      </div>
+    </article> 
+
+    <section class="text-center  padding_top" id="section3">
       <div class="front_text">Ruby<h2 class="back_text"></h2></div>
       <h3 class="content_title">Black Jack  教材作成</h3>
       <div class="container">
 
         <div class="left_space">
-          <p>制作した教材の実行画面動画</p>
+          <p>制作した教材の簡易動画</p>
           <video autoplay muted playsinline controls src="image/blackjack.mov" class="capture_video"></video>
         </div>
 
@@ -92,14 +137,18 @@
       </div>
     </section>
     
-    <section class="text-center padding_top" id="section2">
-      <div class="front_text">Ruby<h2 class="back_text">Ruby</h2></div>
-      <h3 class="content_title">Black Jack ゲーム</h3>
+    <section class="text-center back_dark padding_top" id="section4">
+      <div class="front_text">Rails<h2 class="back_text"></h2></div>
+      <h3 class="content_title">GO7SA_BLOG</h3>
       <div class="container">
 
         <div class="left_space">
-          <p>制作したゲームの実行画面動画</p>
-          <video autoplay muted playsinline controls src="image/blackjack.mov" class="capture_video"></video>
+          <p>制作したアプリへのリンク<br>
+          メールアドレス：ff@com<br> パスワード：ffffffff<br>
+          でログインください。<br>
+          未完成のため、実際の投稿はお控えください。
+          </p>
+          <a href="https://busuke.herokuapp.com/" target="_blank"><img src="images/go7sa.png" alt="GO7SA＿BLOG"></a>
         </div>
 
         <div class="right_space">
@@ -109,8 +158,8 @@
             </div>
             <div class="info">
               <h4 class="top_info">ソースコード</h4>
-              <a href="https://github.com/risottoupdate/blackjack" class="github blue-link" target="_blank">GitHub(BlackJack)</a>
-              <p>起動ファイルは「main.rb」となっております。</p>
+              <a href="https://github.com/yone426/basuke" class="github blue-link" target="_blank">GitHub(Go7SA＿Blog)</a>
+              
             </div>
           </section>
           <section class="flex">
@@ -120,97 +169,63 @@
             <div class="info">
               <h4 class="top_info">こだわりポイント</h4>
               <ul>
-                <li>・完全にRubyだけを用いて制作したゲーム</li>
-                <li>・コードを書く前にマインドマップを作成。設計書通りに制作</li>
-                <li>・実際にゲームを作る事で基礎文法の知識の定着が出来たと実感</li>
-                <li>・「A」が出たら1or11の都合の良い方を選択する、掛け金と点数に応じた支払いロジックを搭載する等、ブラックジャックの基本ルールに準拠</li>
-                <li>・本ゲームを基にした初学者向けのRuby学習教材を作成中</li>
+                <li>・所属している社会人バスケサークルの予定共有アプリ。必要機能をメンバーにヒアリングし、実際に実装</li>
+                <li>・fullcalenderによる予定共有</li>
+                <li>・中間テーブルで得点管理を行い、複数のデータベースを絡めて、得点ランキングを実装</li>
+                <li>・今後は様々なチームに登録してもらい、練習試合等を申し込めるよう実装予定</li>
               </ul>
             </div>
           </section>
           <section class="flex">
-            <div class="icon">
+            <!-- <div class="icon">
               <i class="far fa-plus-square"></i>
-            </div>
+            </div> -->
             <div class="info">
-              <h4 class="top_info">補足資料</h4>
-              <p>事前に作成したマインドマップ（クリックで拡大します）</p>
-              <a href="image/mindmap.png" data-lightbox="group"><img src="image/mindmap.png" width="300" alt="ブラックジャック制作前に作成したマインドマップ"></a>
+              <h4 class="top_info">補足</h4>
+              <p>画像のスライダー機能が上手く動作しない時があるので、修正中。今後も機能を追加していき、実際にバスケサークルで利用していきたいと思います。
+              </p>
+              <!-- <a href="image/mindmap.png" data-lightbox="group"><img src="image/mindmap.png" width="300" alt="ブラックジャック制作前に作成したマインドマップ"></a> -->
             </div>
           </section>
         </div>
 
       </div>
     </section>
-    
 
-
-
-
-    
-    <article class="topics">
-      <section class="content-wrapper">
-        <div class="heading">
-          <h2>経歴</h2>
-        </div>
-        <div class="content">
-          <table>
-          <tbody>
-          <tr>
-          <th>2014.04.01</th>
-          <td>株式会社京都銀行 入行</td>
-          </tr>
-          <tr>
-          <th>2017.04.01</th>
-          <td>学校法人河合塾 入塾</td>
-          </tr>
-          <tr>
-            <th>2020.12.07より</th>
-            <td>プログラミング学習開始</td>
-          </tr>
-          <tr>
-          <th>2020.03.15</th>
-          <td>学校法人河合塾 退塾</td>
-          </tr>
-          </tbody>
-          </table>
-          <!-- <p class="btn"><a href="#">more</a></p> -->
-        </div>
-      </section>
-    </article> 
-
-    <article class="institution" id="section2">
+    <article class="institution" id="section5">
       <section class="content-wrapper">
         <div class="content">
           <h2>もくもく会の主催</h2>
           <p>
           新たに7名のオフラインの繋がりができました。
           </p>
-          <p class="btn"><a href="#">more</a></p>
+          <!-- <p class="btn"><a href="#">more</a></p> -->
         </div>
       </section>
     </article>
 
     <article class="recruit">
       <section class="content-wrapper">
-        <ul>
+        <!-- <ul>
           <li><a href="#"><figure><img src="images/images.jpeg" alt=""></figure><span>正社員</span></a></li>
           <li><a href="#"><figure><img src="images/basketball-courts-2128381_1280.jpg" alt=""></figure><span>アルバイト</span></a></li>
-        </ul>
+        </ul> -->
+        <p>以上、閲覧ありがとうございました。</p>
+        <p>今後も積極的にスキルのキャッチアップ、勉強会などへの参加を行っていきます！</p>
       </section>
     </article>
 
-    <article class="contact">
+    <!-- <article class="contact">
       <ul>
         <li><a href="#">お問い合わせ</a></li>
       </ul>
-    </article>
+    </article> -->
 
   </main>
 
-  <footer class="footer">
-    <section class="content-wrapper">
-      <div class="high">
+  <!-- <footer class="footer">
+    <section class="content-wrapper"> --> 
+      <!-- <div class="high">
         <h1>〇〇FITNESS</h1>
         <ul>
         <li><a href="#">施設案内</a></li>
@@ -218,12 +233,12 @@
         <li><a href="#">お問い合わせ</a></li>
         <p class="top" onclick="scrollToTop()"></p>
         </ul>
-      </div>
-      <div class="low">
+      </div>  -->
+       <!-- <div class="low">
         〒000-0000<span>東京都〇〇</span><br>
         TEL：012-3456-7890
-      </div>
-      <p>&copy;〇〇FITNESS Co.,Ltd.</p>
+      </div> -->
+      <!-- <p>Copyright - 米原 篤志, 2020 All Rights Reserved.</p>
     </section>
-  </footer>
+  </footer> -->
 </body>
